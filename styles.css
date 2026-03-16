@@ -1,0 +1,104 @@
+:root {
+      --bg-dark: #0f172a;
+      --sidebar-bg: #1e293b;
+      --accent: #8b5cf6;
+      --accent-hover: #7c3aed;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --border: #334155;
+      --card-bg: #1e293b;
+      --success: #10b981;
+}
+
+body {
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      overflow: hidden;
+}
+
+.app-container {
+      display: flex;
+      height: 100vh;
+}
+
+.sidebar {
+      width: 260px;
+      background: var(--sidebar-bg);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+}
+
+.sidebar-header {
+      padding: 24px;
+      font-size: 20px;
+      font-weight: 700;
+      border-bottom: 1px solid var(--border);
+}
+
+.sidebar-nav {
+      padding: 16px;
+      flex: 1;
+}
+
+.sidebar-nav a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      border-radius: 8px;
+      margin-bottom: 4px;
+      transition: 0.2s;
+}
+
+.sidebar-nav a:hover, .sidebar-nav a.active {
+      background: rgba(139, 92, 246, 0.1);
+      color: var(--text-primary);
+}
+
+.main-content {
+      flex: 1;
+      padding: 32px;
+      overflow-y: auto;
+}
+
+.card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+}
+
+.btn-primary {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+}
+
+table {
+      width: 100%;
+      border-collapse: collapse;
+}
+
+th, td {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+}
+
+.status-badge {
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      background: rgba(16, 185, 129, 0.1);
+      color: var(--success);
+}
